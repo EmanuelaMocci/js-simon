@@ -11,12 +11,19 @@ while(arr.length < 5){
 }
 alert(arr);
 
-
-
 // Da li parte un timer di 30 secondi.
-
-
 // Dopo 30 secondi l'utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
+
+  setTimeout(function(){
+    prompt("Inserisci i numeri che ricordi.");
+    }, 5000);
+    
+
+
 
 
 // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
+
+// Generare 5 numeri casuali e salvarli in un array, poi far partire il timer di 30 secondo dopo aver chiuso l’alert. 
+// Dopo fai partire il set time out di 30 secondi. 
+// Dentro set time out far uscire 5 prompt per inserire i numeri e verificare come da istruzioni.
