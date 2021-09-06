@@ -15,12 +15,16 @@ alert(arr);
 // Dopo 30 secondi l'utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
 var i = 0;
 
+var arrNumeri = [];
+
 setTimeout(secondi, 3000);
 function secondi(){
     for(i = 0; i < 5; i++){
-    prompt("Inserisci i numeri che ricordi uno alla volta.");
-    }
-}
+    var numeri = parseInt(prompt("Inserisci i numeri che ricordi uno alla volta."));
+    arrNumeri.push(numeri);
+    } 
+    console.log(arrNumeri);
+}   
 
 
 // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
