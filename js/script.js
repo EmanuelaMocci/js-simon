@@ -22,19 +22,25 @@ var indovinati = [];
 
 setTimeout(secondi, 1000);
 function secondi(){
-    for(i = 0; i < 3; i++){
+    for(var i = 0; i < 3; i++){
     var numeri = parseInt(prompt("Inserisci i numeri che ricordi uno alla volta."));
     arrNumeri.push(numeri);
     } 
     console.log(arrNumeri);
 
     for(var i = 0; i < arrNumeri.length; i++){
-        if(arr.includes(arrNumeri[i]) == true);
-    }  
+        if(arr.includes(arrNumeri[i]) == true){
+            indovinati.push(arrNumeri[i]);
+        }
+    } 
+    if(indovinati.length > 0 ){
+        alert("Il totale dei numeri indovinati è: " + indovinati.length + ". I numeri indovinati sono: " + indovinati + ".");
+        } else 
+        alert("Non hai indovinato nessun numero.");
 }
 
-   // } else if(arrNumeri.includes(arr) == true){
-    //     arrNumeri.push(arr);
-    //     alert("Hai indovinato i seguenti numeri: " + );
-    // } else 
-    //     alert("Non hai indovinato nessun numero.");
+    
+
+console.log(indovinati);
+console.log(indovinati.length);
+
