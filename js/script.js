@@ -3,7 +3,7 @@
 
 var arr = [];
 
-while(arr.length < 3){
+while(arr.length < 5){
     var random = Math.floor(Math.random() * 10) + 1;
 
     if(arr.includes(random) == false);
@@ -20,9 +20,9 @@ var indovinati = [];
 
 // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
-setTimeout(secondi, 1000);
+setTimeout(secondi, 30000);
 function secondi(){
-    for(var i = 0; i < 3; i++){
+    for(var i = 0; i < 5; i++){
     var numeri = parseInt(prompt("Inserisci i numeri che ricordi uno alla volta."));
     arrNumeri.push(numeri);
     } 
@@ -41,6 +41,5 @@ function secondi(){
 
     
 
-console.log(indovinati);
-console.log(indovinati.length);
+
 
